@@ -1,0 +1,1 @@
+#include <stdio.h>\n#include <stdlib.h>\n\nint main() {\n    extern char **environ;\n    char **env = environ;\n    \n    while (*env) {\n        printf("%s\n", *env);\n        env++;\n    }\n    return 0;\n}
